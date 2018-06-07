@@ -1,0 +1,26 @@
+body {
+	font: normal 11px sans-serif;
+	margin:0;
+	padding:0;
+}
+
+.wrapper {
+	max-width: 1200px;
+	margin:100px auto;
+	background:#EEE;
+    padding:26px;
+}
+
+.text {
+	width:100%;
+	border:1px solid #DDD;
+    height:70px;
+}
+
+.sendData {
+    background:#0D9E1E;
+}
+
+.sendData:hover {
+    background:#1EAF2F;
+}

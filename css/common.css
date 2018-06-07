@@ -1,0 +1,86 @@
+/* common styles */
+.posRel {
+    position:relative;
+    left:20px;
+}
+
+article {
+    margin-bottom: 40px;
+}
+
+a,
+a:hover {
+    transition: all 100ms ease-in;
+}
+
+.rounded {
+	display: inline-block;
+	background:#333;
+	text-decoration:none;
+	padding:4px 8px;
+	border-radius:12px;
+	color:#FFF;
+	margin: 10px 0;
+}
+
+.rounded:hover {
+    background:#555;
+
+}
+
+.active {
+    background:rgba(13,158,30,.8);
+}
+
+.active:hover {
+    background-color:#1EAF2F;
+}
+
+.winning {
+    color:#FFF;
+    animation: colorchange .75s infinite; 
+    -webkit-animation: colorchange .75s infinite;
+}
+
+@keyframes colorchange {
+    15% {
+        background: #F09;
+    }
+    30% {
+        background: #FC0;
+    }
+}
+
+@-webkit-keyframes colorchange {
+    15% {
+        background: #F09;
+    }
+    30% {
+        background: #FC0;
+    }
+}
+
+/* forms */
+label {
+    display: block;
+    cursor:pointer;
+    margin: .5rem 0;
+}
+
+/* -------------------------------
+	CLEARFIX FLOATING FIXES
+---------------------------------- */
+.clearfix:after { 
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	}
+.clearfix {display: inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+.clear { overflow:hidden; clear:both; height:1px; margin:-1px 0px 0px 0px; font-size:1px; }
+.clear-simple {clear:both; }

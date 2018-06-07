@@ -1,0 +1,10 @@
+body {
+    background-color: #FC0;
+	font: normal 11px monospace;
+	margin:0;
+	padding:0;
+}
+
+h1 {
+	letter-spacing: 8px;
+}
