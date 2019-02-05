@@ -3,7 +3,6 @@ $(document).ready(function(){
       const common = $('.common');
       const switcher = $('.switcher');
       const trigger = $('select');
-      const elem = common.find('link');
       const empty = '';
       // set the css item in localStorage
       let cssIsSet = localStorage.getItem('chCSS');
@@ -32,6 +31,7 @@ $(document).ready(function(){
       function comment(element){
       	element.html('<!--' + element.html() + '-->')
       };
+      // unwrap html from comment function
       function uncomment(element){
         element.html(element.html().replace('<!--','').replace('-->',''))
       };
