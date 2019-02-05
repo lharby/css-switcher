@@ -2,17 +2,30 @@
 <html>
 <head>
 	<title>CSS SWITCHER</title>
-	<link rel="stylesheet" type="text/css" href="css/common.css">
-	<link rel="stylesheet" class="css1" type="text/css" href="css/main.css">
-	<link rel="stylesheet" class="css2" type="text/css" href="">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </head>
 <body>
-	<div class="posRel triggers">
-		<a href="#css1" class="rounded cssTrigger triggerCSS1 active">CSS 1</a>
-		<a href="#css2" class="rounded cssTrigger triggerCSS2">CSS 2</a>
-	</div>
+	<!-- put any inherited stylesheets in here (which should NOT be switched) -->
+	<span class="inherit">
+		<link rel="stylesheet" type="text/css" href="css/default.css">
+		<link rel="stylesheet" type="text/css" href="css/css1.css">
+	</span>
+	<!-- put any stylesheets which can be switched off in here -->
+	<span class="common">
+		<link rel="stylesheet" type="text/css" href="css/common.css">
+		<link rel="stylesheet" type="text/css" href="css/common1.css">
+		<link rel="stylesheet" type="text/css" href="css/common2.css">
+		<link rel="stylesheet" type="text/css" href="css/common3.css">
+	</span>
+	<!-- this is the switcher stylesheet, it is changed via javascript -->
+	<link rel="stylesheet" class="switcher" type="text/css" href="" />
 	<div class="wrapper clearfix">
+		<select class="posRel trigger">
+			<option value="default">Default</option>
+			<option value="css1">CSS 1</option>
+			<option value="css2">CSS 2</option>
+			<option value="luke">Luke</option>
+		</select>
 		<header>
 			<nav>
 				<ul>
