@@ -4,25 +4,20 @@ Application to toggle css files and store the value in localStorage for retrieva
 
 Inside index.html we set several wrappers and one 'empty' css link which we can populate when the client selects a css option.
 
-
-* <!-- put any inherited stylesheets in here (which should NOT be switched) --> *
 ```
+<!-- put any inherited stylesheets in here (which should NOT be switched) -->
 <span class="constant">
   <link rel="stylesheet" type="text/css" href="css/constant.css">
 </span>
-```
 
-* <!-- put any stylesheets which can be switched off in here --> *
-```
+<!-- put any stylesheets which can be switched off in here -->
 <span class="common">
   <link rel="stylesheet" type="text/css" href="css/common.css">
   <link rel="stylesheet" type="text/css" href="css/other-styles.css">
   <link rel="stylesheet" type="text/css" href="css/third-style.css">
 </span>
-```
 
-* <!-- this is the switcher stylesheet, it is changed via javascript using a select input --> *
-```
+<!-- this is the switcher stylesheet, it is changed via javascript using a select input -->
 <link rel="stylesheet" class="switcher" type="text/css" href="" />
 ```
 
