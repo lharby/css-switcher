@@ -6,6 +6,7 @@ Inside index.html we set several wrappers and one 'empty' css link which we can 
 
 
 *<!-- put any inherited stylesheets in here (which should NOT be switched) -->*
+
 ```
 <span class="constant">
   <link rel="stylesheet" type="text/css" href="css/constant.css">
@@ -13,6 +14,7 @@ Inside index.html we set several wrappers and one 'empty' css link which we can 
 ```
 
 *<!-- put any stylesheets which can be switched off in here -->*
+
 ```
 <span class="common">
   <link rel="stylesheet" type="text/css" href="css/common.css">
@@ -21,6 +23,7 @@ Inside index.html we set several wrappers and one 'empty' css link which we can 
 </span>
 ```
 *<!-- this is the switcher stylesheet, it is changed via javascript using a select input -->*
+
 ```
 <link rel="stylesheet" class="switcher" type="text/css" href="" />
 ```
