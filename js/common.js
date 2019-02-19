@@ -3,7 +3,8 @@ $(document).ready(function(){
     const changeCSS = function(){
         const common = $('.common');
         const switcher = $('.switcher');
-        const trigger = $('.trigger');;
+        const trigger = $('.trigger');
+        const cssPath = 'css/'
         const empty = '';
         // set the css item in localStorage
         let cssIsSet = localStorage.getItem('chCSS');
@@ -23,7 +24,7 @@ $(document).ready(function(){
                     // we can retrieve it later
                     uncomment(common);
                     comment(common);
-                    switcher.attr('href', 'css/' +thisCSS+ '.css');
+                    switcher.attr('href', cssPath +thisCSS+ '.css');
                     localStorage.setItem('chCSS', thisCSS);
                 }
             });
@@ -41,7 +42,7 @@ $(document).ready(function(){
         const chCSSSet = function(){
             if(cssIsSet !== null && typeof cssIsSet !== 'undefined' && cssIsSet !== ''){
                 comment(common);
-                switcher.attr('href', 'css/' +cssIsSet+ '.css');
+                switcher.attr('href', cssPath + cssIsSet + '.css');
                 trigger.find('option').each(function(){
                     if($(this).val() == cssIsSet){
                         $(this).attr('selected', 'selected');
