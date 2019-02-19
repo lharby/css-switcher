@@ -24,7 +24,7 @@ $(document).ready(function(){
                     // we can retrieve it later
                     uncomment(common);
                     comment(common);
-                    switcher.attr('href', cssPath +thisCSS+ '.css');
+                    switcher.attr('href', cssPath + thisCSS + '.css');
                     localStorage.setItem('chCSS', thisCSS);
                 }
             });
