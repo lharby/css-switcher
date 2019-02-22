@@ -1,9 +1,10 @@
-$(document).ready(function(){
+jQuery(document).ready(function(){
 
+    let $ = jQuery;
     const setCSS = function(){
         const switcher = $('.switcher');
         const cssTags = $('style, [rel="stylesheet"]').not(switcher);
-        const cssPath = '../css/switcher-css/';
+        const cssPath = '/wp-content/themes/typology/assets/css/switcher-css/';
         const trigger = $('.cssSwitchTrigger');
         const empty = '';
         // set the css item in localStorage
