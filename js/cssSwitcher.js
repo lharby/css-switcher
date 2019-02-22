@@ -4,7 +4,7 @@ $(document).ready(function(){
         const switcher = $('.switcher');
         const cssTags = $('style, [rel="stylesheet"]').not(switcher);
         const cssPath = '../css/switcher-css/';
-        const trigger = $('.trigger');
+        const trigger = $('.cssSwitchTrigger');
         const empty = '';
         // set the css item in localStorage
         let cssIsSet = localStorage.getItem('chCSS');

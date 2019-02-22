@@ -13,13 +13,13 @@ Populate a select with all the stylesheets that the client can switch too.
 
 The value of the first option MUST be 'default', in order for the javascript to work. If the client selects 'default' the switched css will be removed as well as clearing the css value from localStorage and reinsating any other css files we have removed when the client selected one of the options. The values of the other select options must match the name of a css file stored in a common css folder. In this example I have set them to:
 ```
-css/css-switcher/
+css/switcher-css/
 ```
 
 Example of the dropdown:
 
 ```
-<select class="trigger">
+<select class="cssSwitchTrigger">
   <option value="default">Default</option>
   <option value="css1">CSS 1</option>
   <option value="css2">CSS 2</option>
