@@ -1,0 +1,15 @@
+/* common styles */
+.posRel {
+    position:relative;
+    left:30px;
+}
+
+article {
+    margin-bottom: 40px;
+    background:pink;
+}
+
+a,
+a:hover {
+    transition: all 100ms ease-in;
+}

@@ -38,7 +38,7 @@ a:hover {
 
 .winning {
     color:#FFF;
-    animation: colorchange .75s infinite; 
+    animation: colorchange .75s infinite;
     -webkit-animation: colorchange .75s infinite;
 }
 
@@ -70,7 +70,7 @@ label {
 /* -------------------------------
 	CLEARFIX FLOATING FIXES
 ---------------------------------- */
-.clearfix:after { 
+.clearfix:after {
 	content: ".";
 	display: block;
 	height: 0;
