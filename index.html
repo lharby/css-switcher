@@ -6,9 +6,6 @@
 	<link rel="stylesheet" type="text/css" href="css/common.css">
 	<link rel="stylesheet" type="text/css" href="css/common1.css">
 	<link rel="stylesheet" type="text/css" href="css/common2.css">
-	<link rel="stylesheet" type="text/css" href="css/common3.css">
-	<!-- this is the switcher stylesheet, it is changed via javascript -->
-	<link rel="stylesheet" class="switcher" type="text/css" href="" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<style>
 		h1 {
@@ -16,18 +13,25 @@
 		}
 	</style>
 </head>
-<body>
+<body class="home">
 	<div class="wrapper clearfix">
-		<select class="posRel cssSwitchTrigger">
-			<option value="default">Default</option>
-			<option value="css1">CSS 1</option>
-			<option value="css2">CSS 2</option>
-			<option value="luke">Luke</option>
-		</select>
+		<ul class="cssSwitcherWrapper hidden">
+			<li>
+				<link rel="stylesheet" href="" class="switcher">
+				<span class="nav-title">TOGGLER</span>
+				<select class="cssSwitchTrigger">
+					<option value="default">DEFAULT</option>
+					<option value="lukeharby">LUKE HARBY</option>
+					<option value="tobiaszehntner" data-css="include">TOBIAS ZEHNTNER</option>
+					<option value="samread">SAM READ</option>
+					<option value="antonioroberts">ANTONIO ROBERTS</option>
+				</select>
+			</li>
+		</ul>
 		<header>
 			<nav>
 				<ul>
-					<li><a href="index.html">Link 1</a></li>
+					<li><a href="/">Link 1</a></li>
 					<li><a href="temp.html">Link 2</a></li>
 					<li><a href="#">Link 3</a></li>
 					<li><a href="#">Link 3</a></li>

@@ -1,0 +1,269 @@
+@import url("https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css");
+
+body {
+  background: #6e24b7; /* Old browsers */
+  background: -moz-linear-gradient(top, #6e24b7 0%, #ffffff 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #6e24b7 0%, #ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #6e24b7 0%, #ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#6e24b7', endColorstr='#ffffff', GradientType=1); /* IE6-9 */
+  font-family: monospace;
+}
+
+body::before {
+  font-family: ionicons, san-serif;
+  content: "\f3bb"; /* walking figure */
+  position:absolute;
+  color:#FFF;
+  right:-400px;
+  font-size:400vh;
+  opacity:.4;
+}
+
+* {
+    transition: all 200ms ease-in;
+}
+
+a {
+  text-decoration: none;
+  font-family: cursive;
+  color: red;
+  background: rgba(0, 128, 0, 0.5);
+}
+
+a:hover {
+ font-size: 15rem;
+ text-decoration: line-through;
+}
+
+a:nth-child(odd):hover {
+	transition: all 33ms ease-in;
+	font-size: 101%;
+	color: #FFF;
+}
+
+a:nth-child(even):hover {
+  position: fixed;
+}
+
+p {
+  position: relative;
+}
+
+p::before {
+  color: #FFF;
+  position: absolute;
+  content: "ノ゜Д゜ノ︵┻━┻";
+  font-size: 400%;
+  z-index: -1;
+}
+
+p:nth-child(6)::before {
+  content: "(╯°□°)╯︵ ┻━┻";
+  left: 200px;
+}
+
+p::after {
+  position: absolute;
+  color: fuchsia;
+  right: 50%;
+  margin-right: -100px;
+  top: -25%;
+  margin-top: -40px;
+  font-family: ionicons, sans-serif;
+  content: "\f3ab"; /* ionicons sad face */
+  font-size: 10vh;
+  z-index: -1;
+}
+
+p:nth-child(7)::after {
+  -webkit-animation: blink 1s infinite;
+  -moz-animation: blink 1s infinite;
+  -o-animation: blink 1s infinite;
+  animation: blink 1s infinite;
+  margin-right: 40px;
+  right:13px;
+}
+
+p:nth-child(3)::after {
+  margin-right: -200px;
+  right:-40px;
+}
+
+p:nth-child(3n+2) {
+  color: pink;
+}
+
+p:nth-child(3n+3) {
+  font-size: 140%;
+}
+
+span {
+  position: relative;
+}
+
+span::after {
+  position: absolute;
+  top: 5px;
+  left: 43%;
+	content: "💩"; /* poop */
+  font-size: 600%;
+  z-index: -1;
+  -webkit-animation: blink 80ms step-end infinite;
+  animation: blink 80ms step-end infinite;
+}
+
+div:nth-child(2) {
+    background-color: #0f0;
+    left:20%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    position: relative;
+    -webkit-animation: rotating 1s linear infinite;
+    animation: rotating 1s linear infinite;
+}
+
+div:nth-child(2) > p {
+    background-color: #0ff;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    position: absolute;
+    top: 0;
+    left: 25px;
+    color: white;
+}
+
+#footer::before,
+#footer::after,
+#footer .container::before,
+#footer .container::after,
+#footer .container div::before,
+#footer .container div::after,
+#footer .container p::before,
+#footer .container p::after,
+#footer .container .icon-top::before,
+#footer .container .icon-top::after,
+#footer .container .four-cell::before,
+#footer .container .four-cell::after,
+#footer .container .four-cell ul::before,
+#footer .container .four-cell ul::after,
+#footer .container .four-cell ul li::before,
+#footer .container .four-cell ul li::after {
+  position:absolute;
+  font-family: ionicons, sans-serif;
+  content: "\f470";
+  color: goldenrod;
+  font-size:93px;
+}
+
+#footer::after {
+  color:orange;
+}
+
+#footer::before {
+  color:#FC0;
+}
+
+#footer .container::before {
+  color:#D1A;
+}
+
+#footer .container::after {
+  color:#e8f442;
+}
+
+#footer .container div::before {
+  color:#d8be47;
+}
+
+#footer .container div::after {
+  color:#ffdd82;
+}
+
+#footer .container p::before {
+  color:#ba8e1a;
+}
+#footer .container p::after {
+  color:#ede9a5;
+  position: static;
+}
+
+#footer .container .icon-top::before {
+    color:#ffb54f;
+}
+
+#footer .container .icon-top::after {
+    color:#cc7702;
+}
+
+#footer .container .four-cell::before {
+  color:#846943;
+  position: relative;
+}
+
+#footer .container .four-cell::after {
+    color:#d3a519;
+}
+
+#footer .container .four-cell ul::before {
+    color:#f2c848;
+}
+
+#footer .container .four-cell ul::after {
+    color:#ccab63;
+}
+
+#footer .container .four-cell ul li::before {
+    color:#44320a;
+    opacity:0.6;
+}
+
+#footer .container .four-cell ul li::after {
+    color:#f9d109;
+}
+
+
+/* todo change this to a pseudo selector
+div:nth-child(someN) {
+   -webkit-animation: blink 1s infinite;
+   -moz-animation: blink 1s infinite;
+   -o-animation: blink 1s infinite;
+    animation: blink 1s infinite;
+}
+*/
+
+@keyframes blink {
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-o-keyframes blink {
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes blink {
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes blink {
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+
+@-webkit-keyframes rotating {
+    from {
+      -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+
+    to {
+      -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+}

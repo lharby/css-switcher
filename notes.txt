@@ -1,0 +1,7 @@
+fermynwoods.ork/toggler
+Toggler on every page. 
+Not to affect css on home page or education/
+assembly
+Redirect to page about the css toggler.
+
+Is home page unique in Wordpress
